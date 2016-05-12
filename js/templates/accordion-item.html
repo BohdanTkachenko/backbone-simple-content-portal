@@ -1,0 +1,12 @@
+<div class="panel-heading">
+    <h4 class="panel-title">
+        <div class="glyphicon glyphicon-chevron-<%= model.get('collapse') ? 'down' : 'up' %>"></div>
+
+        <%= model.get('name') %>
+    </h4>
+</div>
+<div class="panel-collapse <%= model.get('collapse') ? 'collapse' : '' %>">
+    <div class="panel-body">
+        <%= model.get('content') %>
+    </div>
+</div>
